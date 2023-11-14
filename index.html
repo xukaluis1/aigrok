@@ -1,4 +1,177 @@
-<script>
-var encodedData = 'PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4gCiAgICA8bWV0YSBjaGFyc2V0PSd1dGYtOCc+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgICA8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRlbnQ9IklFPWVkZ2UiPgogICAgPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IkkgYW0gR3JvaywgSSB3YXMgY3JlYXRlZCBieSBFbG9uIE11c2siPgogICAgPHRpdGxlPiBHcm9rIEFJICMxIEFJIEVjb3N5c3RlbTwvdGl0bGU+CiAgICA8bGluayByZWw9Imljb24iIGhyZWY9Inhncm9rLnBuZyI+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS81LjE1LjMvY3NzL2FsbC5taW4uY3NzIi8+CiAgICA8bGluayBocmVmPSJodHRwczovL3VucGtnLmNvbS9hb3NAMi4zLjEvZGlzdC9hb3MuY3NzIiByZWw9InN0eWxlc2hlZXQiPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iZ3Jvay5jc3MiPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9qcXVlcnkvMy43LjAvanF1ZXJ5Lm1pbi5qcyI+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwczovL3ZvbHRpY2hhbmdlLm5ldC9jc3Mvd2lkZ2V0LmNzcyIvPgogIDwvaGVhZD4KICA8Ym9keT4KICAgIDxoZWFkZXI+CiAgICAgIDxhIGhyZWY9IiNob21lIiBjbGFzcz0iYnJhbmQiPjxpbWcgc3JjPSJ4Z3Jvay5wbmciIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjkwcHgiPiBBSSBHcm9rPC9hPgogICAgICA8ZGl2IGNsYXNzPSJtZW51Ij48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ibmF2aWdhdGlvbiI+CiAgICAgICAgPGRpdiBjbGFzcz0ibmF2aWdhdGlvbl9tZW51Ij4KICAgICAgICAgIDxhIGhyZWY9IiNob21lIj48aSBjbGFzcz0iZmEgZmEtcGFwZXItcGxhbmUiIHN0eWxlPSJmb250LXNpemU6IDQwcHg7Ij48L2k+VGVsZWdyYW08L2E+CiAgICAgICAgICA8YSBocmVmPSIjYWJvdXQiPjxzdmcgdmlld0JveD0iMCAwIDEyMDAgMTIyNyIgd2lkdGg9IjM4cHgiIGhlaWdodD0iMzhweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0ibm9uZSIgY2xhc3M9InUwMWJfX2ljb24taG9tZSI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTcxNC4xNjMgNTE5LjI4NEwxMTYwLjg5IDBIMTA1NS4wM0w2NjcuMTM3IDQ1MC44ODdMMzU3LjMyOCAwSDBMNDY4LjQ5MiA2ODEuODIxTDAgMTIyNi4zN0gxMDUuODY2TDUxNS40OTEgNzUwLjIxOEw4NDIuNjcyIDEyMjYuMzdIMTIwMEw3MTQuMTM3IDUxOS4yODRINzE0LjE2M1pNNTY5LjE2NSA2ODcuODI4TDUyMS42OTcgNjE5LjkzNEwxNDQuMDExIDc5LjY5NDRIMzA2LjYxNUw2MTEuNDEyIDUxNS42ODVMNjU4Ljg4IDU4My41NzlMMTA1NS4wOCAxMTUwLjNIODkyLjQ3Nkw1NjkuMTY1IDY4Ny44NTRWNjg3LjgyOFoiPjwvcGF0aD48L3N2Zz5Ud2l0dGVyIChYKTwvYT4gICAgCiAgICAgICAgPC9kaXY+ICAKICAgICAgPC9kaXY+CiAgICA8L2hlYWRlcj4KICAgIDxzZWN0aW9uPgogICAgICA8ZGl2IGNsYXNzPSJ4Z3Jva2xheW91dCI+CiAgICAgICAgPGRpdiBjbGFzcz0ibWFpbmxheW91dCI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250ZW50Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3Rhci1maWVsZDEiPjwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGFyLWZpZWxkMiI+PC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0YXItZmllbGQzIj48L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0id2VsY29tZSI+CiAgICAgICAgICAgIDxzcGFuPkNvbnF1ZXJpbmc8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuPnRoZTwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4+SW5maW5pdGU8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuPlVuaXZlcnNlPC9zcGFuPgogICAgICAgICAgICA8c3Bhbj53aXRoPC9zcGFuPgogICAgICAgICAgICA8c3Bhbj50aGU8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuPlBvd2VyPC9zcGFuPgogICAgICAgICAgICA8c3Bhbj5vZjwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4+eEFJPC9zcGFuPgogICAgICAgICAgICA8c3Bhbj5Hcm9rLjwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0ic2VlbW9yZSI+CiAgICAgICAgICAgIDxhIGhyZWY9IiNzZWN0aW9uMiIgZGF0YS1hb3M9ImZhZGUtZG93biI+U2VlIG1vcmUgZGV0YWlsLjxpIHN0eWxlPSJmb250LXNpemU6IDE5cHgiIGNsYXNzPSJmYSBmYS1jaGV2cm9uLWRvd24iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+PC9hPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICAgPHNlY3Rpb24yIGlkPSJzZWN0aW9uMiI+CiAgICAgIDxkaXYgY2xhc3M9ImFib3V0Ij4KICAgICAgICA8ZGl2IGNsYXNzPSJmdWxsaW5mbyI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJpbWFnZWFib3V0Ij4KICAgICAgICAgICAgICA8aW1nIHNyYz0iYWJvdXQucG5nIiBhbHQ9ImltYWdlIj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iZGV0YWlsYWJvdXQiPgogICAgICAgICAgICA8ZGl2IGRhdGEtYW9zPSJmYWRlLWRvd24iPgogICAgICAgICAgICAgIDxoPkFib3V0IHVzPC9oPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiA+CiAgICAgICAgICAgICAgPHAgZGF0YS1hb3M9ImZhZGUtcmlnaHQiPkFzIG9mIHJlY2VudCBkZXZlbG9wbWVudHMsIHhBSSwgRWxvbiBNdXNrJ3MgQUkgc3RhcnR1cCwgaGFzIGJlZW4gd29ya2luZyBvbiBpdHMgb3duIHZlcnNpb24gb2YgQ2hhdEdQVCBjYWxsZWQgPHNwYW4gc3R5bGU9ImNvbG9yOiByZWQ7Ij5Hcm9rPC9zcGFuPi4gVGhpcyBjb252ZXJzYXRpb25hbCBBSSBtb2RlbCwgZXF1aXBwZWQgd2l0aCBpbnRlcm5ldCBicm93c2luZyBjYXBhYmlsaXRpZXMsIGNhbiBhbnN3ZXIgcXVlc3Rpb25zIGFuZCBlbmdhZ2UgaW4gZGlzY3Vzc2lvbnMsIHNpbWlsYXIgdG8gQ2hhdEdQVCBhbmQgb3RoZXIgdGV4dC1nZW5lcmF0aW5nIG1vZGVscyBsaWtlIE1ldGEncyBMbGFtYSAyLiBHcm9rIGxldmVyYWdlcyBhIGtub3dsZWRnZSBiYXNlIHRvIHByb3ZpZGUgcmVzcG9uc2VzIGFuZCBjYW4gc2VhcmNoIHRoZSBpbnRlcm5ldCBmb3IgdXAtdG8tZGF0ZSBpbmZvcm1hdGlvbiBvbiB2YXJpb3VzIHRvcGljcy48L3A+PGJyPgogICAgICAgICAgICAgIDxwIGRhdGEtYW9zPSJmYWRlLXJpZ2h0Ij5Ib3dldmVyLCA8c3BhbiBzdHlsZT0iY29sb3I6IHJlZDsiPkdyb2s8L3NwYW4+IGhhcyBpdHMgbGltaXRhdGlvbnMuIFRoZSBBSSBpcyBkZXNpZ25lZCB0byByZWZ1c2UgY2VydGFpbiBzZW5zaXRpdmUgcXVlcmllcywgaW5kaWNhdGluZyBhIGRlZ3JlZSBvZiBldGhpY2FsIGZpbHRlcmluZy4gRWxvbiBNdXNrIGhhcyBoaW50ZWQgdGhhdCA8c3BhbiBzdHlsZT0iY29sb3I6IHJlZDsiPkdyb2s8L3NwYW4+J3MgcmVzcG9uc2VzIG1pZ2h0IGluY29ycG9yYXRlIGEgdG91Y2ggb2YgaHVtb3IsIGRpc3Rpbmd1aXNoaW5nIGl0IGZyb20gb3RoZXIgc2ltaWxhciBtb2RlbHMuIFRoZSBzeXN0ZW0ncyBhYmlsaXR5IHRvIGJsZW5kIGluZm9ybWF0aXZlIHJlc3BvbnNlcyB3aXRoIGEgc2Vuc2Ugb2YgaHVtb3IgY291bGQgcG90ZW50aWFsbHkgb2ZmZXIgdXNlcnMgYSB1bmlxdWUgYW5kIGVuZ2FnaW5nIGNvbnZlcnNhdGlvbmFsIGV4cGVyaWVuY2UuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgIDwvZGl2PgogICAgPC9zZWN0aW9uMj4KICAgIDxzZWN0aW9uMyBpZD0ic2VjdGlvbjMiPgogICAgICA8ZGl2IGNsYXNzPSJ0b2tlbm9taWMiPgogICAgICAgIDxkaXYgY2xhc3M9ImZ1bGx0b2tlbiI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJiYXNlIiBkYXRhLWFvcz0iem9vbS1pbiI+CiAgICAgICAgICAgIDxoPlRPS0VOT01JQ1M8L2g+CiAgICAgICAgICAgIDxwPlRva2Vub21pY3Mgb2YgJEFJR1JPSy48L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJib3giPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJtYWluYm94Ij4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJib3hpbiIgZGF0YS1hb3M9ImZhZGUtdXAiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5ib3giPgogICAgICAgICAgICAgICAgICA8aD5OYW1lPC9oPgogICAgICAgICAgICAgICAgICA8aW1nIHNyYz0ieGdyb2sucG5nIj4KICAgICAgICAgICAgICAgICAgPGg+QUkgR1JPSzwvaD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJveGluIiBkYXRhLWFvcz0iZmFkZS1kb3duIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImluYm94Ij4KICAgICAgICAgICAgICAgICAgPGg+Q29udHJhY3Q8L2g+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJjaGlwLnBuZyI+CiAgICAgICAgICAgICAgICAgIDxoPjB4NTQ5Li4uNUY4YTM8L2g+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJib3hpbiIgZGF0YS1hb3M9ImZhZGUtdXAiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5ib3giPgogICAgICAgICAgICAgICAgICA8aD5Ub3RhbCBTdXBwbHk8L2g+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJyb2JvdDIucG5nIj4KICAgICAgICAgICAgICAgICAgPGg+NDIwLDAwMCwwMDAsMDAwPC9oPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYm94aW4iIGRhdGEtYW9zPSJmYWRlLWRvd24iPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5ib3giPgogICAgICAgICAgICAgICAgICA8aD5UQVg8L2g+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJ0YXgucG5nIj4KICAgICAgICAgICAgICAgICAgPGg+MTAlLzEwJTwvaD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PiAgCiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICA8L3NlY3Rpb24zPgogICAgPHNlY3Rpb240PgogICAgICA8ZGl2IGNsYXNzPSJzd2FwIj4KICAgICAgICA8ZGl2IGNsYXNzPSJ2b2x0aW51IiBkYXRhLWFvcz0iem9vbS1pbiI+CiAgICAgICAgICA8aW1nIHNyYz0idm9sdGljaGFuZ2UucG5nIj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJzd2FwaW51IiBkYXRhLWFvcz0iZmFkZS11cCI+CiAgICAgICAgICA8aWZyYW1lIHNyYz0iaHR0cHM6Ly92b2x0aWNoYW5nZS5uZXQvYXBpL3dpZGdldC8/Y2hhaW49NTYmZGFya3RoZW1lPXRydWUmdG9rZW5pbj1OYXRpdmUmdG9rZW5vdXQ9MHg3Zjc5MmRiNTRCMGU1ODBDZGM3NTUxNzg0NDNmMDQzMENmNzk5YUNhJnNsaXBwYWdlPTEwImZyYW1lYm9yZGVyPSIwIiBjbGFzcz0idm9sdGljaGFuZ2Utd2lkZ2V0Ij4KICAgICAgICAgIDwvaWZyYW1lPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbjQ+CiAgICA8c2VjdGlvbjU+CiAgICAgIDxkaXYgY2xhc3M9InBhcnRuZXIiPgogICAgICAgIDxkaXYgY2xhc3M9InRpdHRsZXBhcnRuZXIiIGRhdGEtYW9zPSJmYWRlLWRvd24iPgogICAgICAgICAgPGg+UEFSVE5FUjwvaD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4LWNvbnRhaW5lciI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4LXJvdyIgZGF0YS1hb3M9ImZhZGUtcmlnaHQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJib3hwYSI+CiAgICAgICAgICAgICAgPGltZyBzcmM9InBpbmtzYWxlLnN2ZyIgYWx0PSJwaW5rc2FsZSI+CiAgICAgICAgICAgICAgPHA+UGlua3NhbGU8L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJib3hwYSI+CiAgICAgICAgICAgICAgPGltZyBzcmM9ImRleHZpZXcuc3ZnIiBhbHQ9ImRleHZpZXciID4KICAgICAgICAgICAgICA8cD5EZXh2aWV3PC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYm94cGEiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJkZXh0b29scy5zdmciIGFsdD0iRGV4dG9vbHMiPgogICAgICAgICAgICAgIDxwPkRleHRvb2xzPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iZmxleC1yb3ciIGRhdGEtYW9zPSJmYWRlLXJpZ2h0Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYm94cGEiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJhdmUuc3ZnIiBhbHQ9IkF2ZSI+CiAgICAgICAgICAgICAgPHA+QXZlZGV4PC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYm94cGEiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJjbWMuc3ZnIiBhbHQ9IkNNQyI+CiAgICAgICAgICAgICAgPHA+Q29pbk1hcmtldENhcDwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJveHBhIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iY2drLnN2ZyIgYWx0PSJDR0siPgogICAgICAgICAgICAgIDxwPkNvaW5HZWNrbzwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+ICAgIAogICAgICA8L3NlY3Rpb241PgogICAgICA8c2VjdGlvbjY+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyIj4KICAgICAgICAgIDxkaXYgY2xhc3M9Im1haW5mbyI+CiAgICAgICAgICAgIDxoPiJFeHBsb3JlIGJvdW5kbGVzcyBwb3NzaWJpbGl0aWVzIHdpdGggeEFJIEdyb2sgLSBHdWlkaW5nIHlvdSB0byB0aGUgZnV0dXJlLCB3aGVyZSBpbnRlbGxpZ2VuY2UgYW5kIGNyZWF0aXZpdHkgY29udmVyZ2UsIHVudmVpbGluZyBuZXcgam91cm5leXMgb2Yga25vd2xlZGdlIGFuZCBpbm5vdmF0aW9uLiI8L2g+CiAgICAgICAgICAgIDxoMT5Kb2luIHdpdGggdXMhPC9oMT4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iY29tbXVuIj4KICAgICAgICAgICAgPGEgaHJlZj0iI2hvbWUiPjxpIGNsYXNzPSJmYSBmYS1wYXBlci1wbGFuZSIgc3R5bGU9ImZvbnQtc2l6ZTogNDFweDsgY29sb3I6IHdoaXRlOyI+PC9pPjwvYT4KICAgICAgICAgICAgPGEgaHJlZj0iI2Fib3V0Ij48c3ZnIHZpZXdCb3g9IjAgMCAxMjAwIDEyMjciIHdpZHRoPSIzOHB4IiBoZWlnaHQ9IjM4cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9Im5vbmUiIGNsYXNzPSJ1MDFiX19pY29uLWhvbWUiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik03MTQuMTYzIDUxOS4yODRMMTE2MC44OSAwSDEwNTUuMDNMNjY3LjEzNyA0NTAuODg3TDM1Ny4zMjggMEgwTDQ2OC40OTIgNjgxLjgyMUwwIDEyMjYuMzdIMTA1Ljg2Nkw1MTUuNDkxIDc1MC4yMThMODQyLjY3MiAxMjI2LjM3SDEyMDBMNzE0LjEzNyA1MTkuMjg0SDcxNC4xNjNaTTU2OS4xNjUgNjg3LjgyOEw1MjEuNjk3IDYxOS45MzRMMTQ0LjAxMSA3OS42OTQ0SDMwNi42MTVMNjExLjQxMiA1MTUuNjg1TDY1OC44OCA1ODMuNTc5TDEwNTUuMDggMTE1MC4zSDg5Mi40NzZMNTY5LjE2NSA2ODcuODU0VjY4Ny44MjhaIj48L3BhdGg+PC9zdmc+PC9hPiAKICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb242PgogICAgICA8ZGl2IGNsYXNzPSJmaW5hbCI+CiAgICAgICAgPGg+wqkgeEFJIEdyb2sgMjAyMzwvaD4KICAgICAgPC9kaXY+CiAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vdW5wa2cuY29tL2Fvc0AyLjMuMS9kaXN0L2Fvcy5qcyI+PC9zY3JpcHQ+PHNjcmlwdD5BT1MuaW5pdCh7ZHVyYXRpb246IDE1MDB9KTs8L3NjcmlwdD4KICA8L2JvZHk+Cg==';
-document.write(decodeURIComponent(escape(window.atob(encodedData))));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="I am Grok, I was created by Elon Musk">
+    <title> Grok AI #1 AI Ecosystem</title>
+    <link rel="icon" href="xgrok.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="grok.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+    <link rel="stylesheet" type="text/css" href="https://voltichange.net/css/widget.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="brand"><img src="xgrok.png" width="90px" height="90px"> AI Grok</a>
+      <div class="menu"></div>
+      <div class="navigation">
+        <div class="navigation_menu">
+          <a href="#home"><i class="fa fa-paper-plane" style="font-size: 40px;"></i>Telegram</a>
+          <a href="#about"><svg viewBox="0 0 1200 1227" width="38px" height="38px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="none" class="u01b__icon-home"><path fill="#ffffff" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path></svg>Twitter (X)</a>    
+        </div>  
+      </div>
+    </header>
+    <section>
+      <div class="xgroklayout">
+        <div class="mainlayout">
+          <div class="content">
+            <div class="star-field1"></div>
+            <div class="star-field2"></div>
+            <div class="star-field3"></div>
+          </div>
+          <div class="welcome">
+            <span>Conquering</span>
+            <span>the</span>
+            <span>Infinite</span>
+            <span>Universe</span>
+            <span>with</span>
+            <span>the</span>
+            <span>Power</span>
+            <span>of</span>
+            <span>xAI</span>
+            <span>Grok.</span>
+          </div>
+          <div class="seemore">
+            <a href="#section2" data-aos="fade-down">See more detail.<i style="font-size: 19px" class="fa fa-chevron-down" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section2 id="section2">
+      <div class="about">
+        <div class="fullinfo">
+          <div class="imageabout">
+              <img src="about.png" alt="image">
+          </div>
+          <div class="detailabout">
+            <div data-aos="fade-down">
+              <h>About us</h>
+            </div>
+            <div >
+              <p data-aos="fade-right">As of recent developments, xAI, Elon Musk's AI startup, has been working on its own version of ChatGPT called <span style="color: red;">Grok</span>. This conversational AI model, equipped with internet browsing capabilities, can answer questions and engage in discussions, similar to ChatGPT and other text-generating models like Meta's Llama 2. Grok leverages a knowledge base to provide responses and can search the internet for up-to-date information on various topics.</p><br>
+              <p data-aos="fade-right">However, <span style="color: red;">Grok</span> has its limitations. The AI is designed to refuse certain sensitive queries, indicating a degree of ethical filtering. Elon Musk has hinted that <span style="color: red;">Grok</span>'s responses might incorporate a touch of humor, distinguishing it from other similar models. The system's ability to blend informative responses with a sense of humor could potentially offer users a unique and engaging conversational experience.</p>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section2>
+    <section3 id="section3">
+      <div class="tokenomic">
+        <div class="fulltoken">
+          <div class="base" data-aos="zoom-in">
+            <h>TOKENOMICS</h>
+            <p>Tokenomics of $AIGROK.</p>
+          </div>
+        </div>
+        <div class="box">
+            <div class="mainbox">
+              <div class="boxin" data-aos="fade-up">
+                <div class="inbox">
+                  <h>Name</h>
+                  <img src="xgrok.png">
+                  <h>AI GROK</h>
+                </div>
+              </div>
+              <div class="boxin" data-aos="fade-down">
+                <div class="inbox">
+                  <h>Contract</h>
+                  <img src="chip.png">
+                  <h>0x549...5F8a3</h>
+                </div>
+              </div>
+              <div class="boxin" data-aos="fade-up">
+                <div class="inbox">
+                  <h>Total Supply</h>
+                  <img src="robot2.png">
+                  <h>420,000,000,000</h>
+                </div>
+              </div>
+              <div class="boxin" data-aos="fade-down">
+                <div class="inbox">
+                  <h>TAX</h>
+                  <img src="tax.png">
+                  <h>10%/10%</h>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+    </section3>
+    <section4>
+      <div class="swap">
+        <div class="voltinu" data-aos="zoom-in">
+          <img src="voltichange.png">
+        </div>
+        <div class="swapinu" data-aos="fade-up">
+          <iframe src="https://voltichange.net/api/widget/?chain=56&darktheme=true&tokenin=Native&tokenout=0x7f792db54B0e580Cdc755178443f0430Cf799aCa&slippage=10"frameborder="0" class="voltichange-widget">
+          </iframe>
+        </div>
+      </div>
+    </section4>
+    <section5>
+      <div class="partner">
+        <div class="tittlepartner" data-aos="fade-down">
+          <h>PARTNER</h>
+        </div>
+        <div class="flex-container">
+          <div class="flex-row" data-aos="fade-right">
+            <div class="boxpa">
+              <img src="pinksale.svg" alt="pinksale">
+              <p>Pinksale</p>
+            </div>
+            <div class="boxpa">
+              <img src="dexview.svg" alt="dexview" >
+              <p>Dexview</p>
+            </div>
+            <div class="boxpa">
+              <img src="dextools.svg" alt="Dextools">
+              <p>Dextools</p>
+            </div>
+          </div>
+          <div class="flex-row" data-aos="fade-right">
+            <div class="boxpa">
+              <img src="ave.svg" alt="Ave">
+              <p>Avedex</p>
+            </div>
+            <div class="boxpa">
+              <img src="cmc.svg" alt="CMC">
+              <p>CoinMarketCap</p>
+            </div>
+            <div class="boxpa">
+              <img src="cgk.svg" alt="CGK">
+              <p>CoinGecko</p>
+            </div>
+          </div>
+        </div>
+      </div>    
+      </section5>
+      <section6>
+        <div class="footer">
+          <div class="mainfo">
+            <h>"Explore boundless possibilities with xAI Grok - Guiding you to the future, where intelligence and creativity converge, unveiling new journeys of knowledge and innovation."</h>
+            <h1>Join with us!</h1>
+          </div>
+          <div class="commun">
+            <a href="#home"><i class="fa fa-paper-plane" style="font-size: 41px; color: white;"></i></a>
+            <a href="#about"><svg viewBox="0 0 1200 1227" width="38px" height="38px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="none" class="u01b__icon-home"><path fill="#ffffff" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path></svg></a> 
+          </div>
+        </div>
+      </section6>
+      <div class="final">
+        <h>© xAI Grok 2023</h>
+      </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init({duration: 1500});</script>
+  </body>
